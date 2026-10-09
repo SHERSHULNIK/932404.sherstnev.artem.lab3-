@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>О себе</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        textarea {
+            min-height: 140px;
+            box-shadow: inset 0 0 8px rgba(40, 20, 70, 0.35);
+            font-family: monospace;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <img
+    src="images/1.jpg"
+        alt="Портрет Артема Шерстнева"
+    width="200"
+    height="200"
+>
+    <h1>Артем Шерстнев</h1>
+    <p>Студент, монтажер, дизайнер</p>
+
+    </header>
+    <main>
+        <section>
+            <h2>Навыки</h2>
+
+            <ul>
+                <li>Графический дизайн</li>
+                <li>Монтаж видео</li>
+                <li>VFX</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Проекты</h2>
+
+            <div class="project-images">
+                <figure class="project-card">
+                    <img
+        src="images/2.jpg"
+        alt="Пример графического дизайна"
+        width="376"
+        height="210"
+    >
+                        <span class="favorite-icon" aria-label="Избранное">★</span>
+                </figure>
+                <figure>
+                    <img
+        src="images/3.jpg"
+        alt="Пример видеомонтажа и визуальных эффектов"
+        width="376"
+        height="210"
+    >
+                </figure>
+            </div>
+
+            <ol>
+                <li>Создание динамичных видеороликов</li>
+                <li>Разработка фирменного стиля</li>
+                <li>Продюсирование малых блогеров</li>
+            </ol>
+        </section>
+
+        <section>
+            
+            <h2>Обратная связь</h2>
+            
+            <form>
+                <label for="name">Ваше имя</label>
+                <input id="name" type="text" name="name" placeholder="Ваше имя" required>
+                <label for="email">Ваш email</label>
+                <input id="email" type="email" name="email" placeholder="Ваш email" required>
+                <label for="message">Ваше сообщение</label>
+                <textarea id="message" name="message" placeholder="Ваше сообщение" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Мои хобби</h2>
+            <div class="hobby-list">
+                <article class="hobby-card">
+                    <img src="images/Рисование.jpg" alt="Рисунок, выполненный карандашом" width="76" height="76">
+                    <div>
+                        <h3>Рисование</h3>
+                        <p lang="ru">Люблю подбирать цвета и создавать иллюстрации в разных стилях.</p>
+                    </div>
+                </article>
+                <article class="hobby-card">
+                    <img src="images/Фотография.jpg" alt="Фотоаппарат для съёмки" width="76" height="76">
+                    <div>
+                        <h3>Фотография</h3>
+                        <p lang="ru">Снимаю интересные детали, городские улицы и моменты из повседневной жизни.</p>
+                    </div>
+                </article>
+                <article class="hobby-card">
+                    <img src="images/Монтаж%20видео.jpg" alt="Пример работы по видеомонтажу" width="76" height="76">
+                    <div>
+                        <h3>Видеомонтаж</h3>
+                        <p lang="ru">Монтирую ролики, работаю с музыкой и пробую разные визуальные эффекты.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2>Любимые места</h2>
+            <div class="place-grid">
+                <figure class="place-card">
+                    <img src="images/Парк.jpg" alt="Аллея в парке" width="700" height="460">
+                    <figcaption>
+                        <h3>Парк</h3>
+                        <p lang="ru">Хорошее место, чтобы прогуляться и отдохнуть от городской суеты.</p>
+                    </figcaption>
+                </figure>
+                <figure class="place-card">
+                    <img src="images/Набережная.png" alt="Городская набережная на закате" width="700" height="460">
+                    <figcaption>
+                        <h3>Набережная</h3>
+                        <p lang="ru">Люблю гулять здесь вечером и смотреть на воду.</p>
+                    </figcaption>
+                </figure>
+                <figure class="place-card">
+                    <img src="images/Музей.jpg" alt="Здание художественного музея" width="700" height="460">
+                    <figcaption>
+                        <h3>Художественный музей</h3>
+                        <p lang="ru">Здесь можно увидеть разные работы и найти идеи для творчества.</p>
+                    </figcaption>
+                </figure>
+                <figure class="place-card">
+                    <img src="images/Кофейня.jpg" alt="Интерьер уютной кофейни" width="700" height="460">
+                    <figcaption>
+                        <h3>Кофейня</h3>
+                        <p lang="ru">Нравится заходить сюда за кофе и спокойно провести время.</p>
+                    </figcaption>
+                </figure>
+                <figure class="place-card">
+                    <img src="images/центр%20города.jpg" alt="Вид на центр города" width="700" height="460">
+                    <figcaption>
+                        <h3>Центр города</h3>
+                        <p lang="ru">Мне интересны местная архитектура и оживлённые улицы.</p>
+                    </figcaption>
+                </figure>
+                <figure class="place-card">
+                    <img src="images/Фитнесс%20зал.jpg" alt="Тренажёры в фитнес-зале" width="700" height="460">
+                    <figcaption>
+                        <h3>Фитнесс зал</h3>
+                        <p lang="ru">Здесь можно поддерживать форму и заниматься на тренажёрах.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <aside style="background-color: rgba(255, 255, 255, 0.7);">
+            <h2>Любимое направление</h2>
+            <p>Цифровое искусство</p>
+        </aside>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 Шерстнев Артем Игоревич</p>
+        <p>Контакты: <a href="mailto:sherstnev_work@mail.ru">sherstnev_work@mail.ru</a></p>
+    </footer>
+    <script>
+        const sections = document.querySelectorAll("main > section");
+        const visibility = new Map([...sections].map(section => [section, 0]));
+
+        const sectionObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => visibility.set(entry.target, entry.intersectionRatio));
+
+            const activeSection = [...visibility]
+                .filter(([, ratio]) => ratio > 0)
+                .sort((first, second) => second[1] - first[1])[0]?.[0];
+
+            sections.forEach(section => {
+                section.classList.toggle("active", section === activeSection);
+            });
+        }, { threshold: [0, 0.25, 0.5, 0.75, 1] });
+
+        sections.forEach(section => sectionObserver.observe(section));
+    </script>
+</body>
+</html>
