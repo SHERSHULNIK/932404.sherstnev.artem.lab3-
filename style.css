@@ -21,6 +21,7 @@ body {
 }
 
 header,
+nav,
 section,
 aside,
 footer {
@@ -47,6 +48,15 @@ header img {
     object-fit: cover;
 }
 
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 20px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
 main {
     display: grid;
     gap: 20px;
@@ -57,6 +67,10 @@ main {
 section {
     position: relative;
     transition: border-color 0.25s, background-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+aside {
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 main > section:hover,
@@ -91,7 +105,12 @@ figure {
     border-radius: 50%;
 }
 
-.hobby-list,
+.hobby-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
 .place-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -100,6 +119,7 @@ figure {
 
 .hobby-card {
     display: flex;
+    flex: 0 1 calc((100% - 28px) / 3);
     align-items: center;
     gap: 12px;
     min-width: 0;
@@ -219,15 +239,21 @@ footer {
         height: auto;
     }
 
-    .hobby-list,
     .place-grid {
         grid-template-columns: 1fr;
+    }
+
+    .hobby-card {
+        flex-basis: 100%;
     }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
-    .hobby-list,
     .place-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hobby-card {
+        flex-basis: calc((100% - 14px) / 2);
     }
 }

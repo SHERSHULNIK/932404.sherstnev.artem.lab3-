@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>О себе</title>
     <link rel="stylesheet" href="style.css">
     <style>
@@ -27,8 +28,15 @@
     <p>Студент, монтажер, дизайнер</p>
 
     </header>
+    <nav aria-label="Основная навигация">
+        <a href="#skills">Навыки</a>
+        <a href="#projects">Проекты</a>
+        <a href="#feedback">Обратная связь</a>
+        <a href="#hobbies">Мои хобби</a>
+        <a href="#places">Любимые места</a>
+    </nav>
     <main>
-        <section>
+        <section id="skills">
             <h2>Навыки</h2>
 
             <ul>
@@ -38,7 +46,7 @@
             </ul>
         </section>
         
-        <section>
+        <section id="projects">
             <h2>Проекты</h2>
 
             <div class="project-images">
@@ -49,7 +57,7 @@
         width="376"
         height="210"
     >
-                        <span class="favorite-icon" aria-label="Избранное">★</span>
+                        <span class="favorite-icon" role="img" aria-label="Избранное">★</span>
                 </figure>
                 <figure>
                     <img
@@ -68,11 +76,11 @@
             </ol>
         </section>
 
-        <section>
+        <section id="feedback">
             
             <h2>Обратная связь</h2>
             
-            <form>
+            <form action="#" method="post">
                 <label for="name">Ваше имя</label>
                 <input id="name" type="text" name="name" placeholder="Ваше имя" required>
                 <label for="email">Ваш email</label>
@@ -83,25 +91,25 @@
             </form>
         </section>
 
-        <section>
+        <section id="hobbies">
             <h2>Мои хобби</h2>
             <div class="hobby-list">
                 <article class="hobby-card">
-                    <img src="images/Рисование.jpg" alt="Рисунок, выполненный карандашом" width="76" height="76">
+                    <img src="images/drawing.jpg" alt="Рисунок, выполненный карандашом" width="76" height="76">
                     <div>
                         <h3>Рисование</h3>
                         <p lang="ru">Люблю подбирать цвета и создавать иллюстрации в разных стилях.</p>
                     </div>
                 </article>
                 <article class="hobby-card">
-                    <img src="images/Фотография.jpg" alt="Фотоаппарат для съёмки" width="76" height="76">
+                    <img src="images/photography.jpg" alt="Фотоаппарат для съёмки" width="76" height="76">
                     <div>
                         <h3>Фотография</h3>
                         <p lang="ru">Снимаю интересные детали, городские улицы и моменты из повседневной жизни.</p>
                     </div>
                 </article>
                 <article class="hobby-card">
-                    <img src="images/Монтаж%20видео.jpg" alt="Пример работы по видеомонтажу" width="76" height="76">
+                    <img src="images/video-editing.jpg" alt="Пример работы по видеомонтажу" width="76" height="76">
                     <div>
                         <h3>Видеомонтаж</h3>
                         <p lang="ru">Монтирую ролики, работаю с музыкой и пробую разные визуальные эффекты.</p>
@@ -110,46 +118,46 @@
             </div>
         </section>
 
-        <section>
+        <section id="places">
             <h2>Любимые места</h2>
             <div class="place-grid">
                 <figure class="place-card">
-                    <img src="images/Парк.jpg" alt="Аллея в парке" width="700" height="460">
+                    <img src="images/park.jpg" alt="Аллея в парке" width="700" height="460">
                     <figcaption>
                         <h3>Парк</h3>
                         <p lang="ru">Хорошее место, чтобы прогуляться и отдохнуть от городской суеты.</p>
                     </figcaption>
                 </figure>
                 <figure class="place-card">
-                    <img src="images/Набережная.png" alt="Городская набережная на закате" width="700" height="460">
+                    <img src="images/embankment.png" alt="Городская набережная на закате" width="700" height="460">
                     <figcaption>
                         <h3>Набережная</h3>
                         <p lang="ru">Люблю гулять здесь вечером и смотреть на воду.</p>
                     </figcaption>
                 </figure>
                 <figure class="place-card">
-                    <img src="images/Музей.jpg" alt="Здание художественного музея" width="700" height="460">
+                    <img src="images/museum.jpg" alt="Здание художественного музея" width="700" height="460">
                     <figcaption>
                         <h3>Художественный музей</h3>
                         <p lang="ru">Здесь можно увидеть разные работы и найти идеи для творчества.</p>
                     </figcaption>
                 </figure>
                 <figure class="place-card">
-                    <img src="images/Кофейня.jpg" alt="Интерьер уютной кофейни" width="700" height="460">
+                    <img src="images/cafe.jpg" alt="Интерьер уютной кофейни" width="700" height="460">
                     <figcaption>
                         <h3>Кофейня</h3>
                         <p lang="ru">Нравится заходить сюда за кофе и спокойно провести время.</p>
                     </figcaption>
                 </figure>
                 <figure class="place-card">
-                    <img src="images/центр%20города.jpg" alt="Вид на центр города" width="700" height="460">
+                    <img src="images/city-center.jpg" alt="Вид на центр города" width="700" height="460">
                     <figcaption>
                         <h3>Центр города</h3>
                         <p lang="ru">Мне интересны местная архитектура и оживлённые улицы.</p>
                     </figcaption>
                 </figure>
                 <figure class="place-card">
-                    <img src="images/Фитнесс%20зал.jpg" alt="Тренажёры в фитнес-зале" width="700" height="460">
+                    <img src="images/gym.jpg" alt="Тренажёры в фитнес-зале" width="700" height="460">
                     <figcaption>
                         <h3>Фитнесс зал</h3>
                         <p lang="ru">Здесь можно поддерживать форму и заниматься на тренажёрах.</p>
@@ -158,7 +166,7 @@
             </div>
         </section>
 
-        <aside style="background-color: rgba(255, 255, 255, 0.7);">
+        <aside>
             <h2>Любимое направление</h2>
             <p>Цифровое искусство</p>
         </aside>
